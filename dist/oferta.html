@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracownia Kreślarska</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="output.css">
+    
+</head>
+<body>
+  <nav class="flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center flex-shrink-0 text-black mr-6">
+      <img src="zdj/icons8-home-page-50.png" alt="" class="">
+      <span class="font-semibold text-xl tracking-tight ml-3 mt-1"> Pracownia Kreślarska</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-black">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow text-center lg:flex lg:items-center lg:w-auto xl:flex xl:items-center xl:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Strona Główna
+        </a>
+        <a href="oferta.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Oferta
+        </a>
+        <a href="projekty.php" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Projekty
+        </a>
+        <a href="kontakt.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Kontakt
+        </a>
+        <a href="ofirmie.html" class="block mt-4 lg:inline-block lg:mt-0 text-black text-lg">
+          O Firmie
+        </a>
+      </div>
+      <div class="flex">
+        <a href="tel:+123456789">
+          <img src="zdj/icons8-iphone-se-30.png" alt="" class="hidden lg:block">
+        </a>
+        <a href="tel:+123456789" class="hidden lg:block inline-block text-sm px-4 py-2 leading-none text-lg text-black border-black mt-4 lg:mt-0">
+          +48 123 321 123
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuButton = document.querySelector('.block button');
+    const menu = document.querySelector('.text-center');
+
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+    
+      <section>
+      <div class="relative">
+        <img src="zdj/mainphoto-offer.png" class="w-full h-[877px]">
+        <div class="absolute bottom-1/3 left-1/4 bg-white  h-[157px]  flex justify-center items-center pl-10 lg:pl-2  w-2/3 text-white font-medium text-4xl lg:bottom-1/2 sm:w-2/3 lg:text-5xl xl:text-6xl xl:w-1/2">
+          <p class="font-bold text-7xl leading-8 text-center text-gray-800 font-sans mb-4">Oferta</p>
+        </div>
+      </div> 
+      </section>
+
+      <section>
+        <div class="mt-[150px] mx-auto max-w-7xl p-4 md:p-8 lg:p-16">
+            <h2 class="pb-4 text-center text-5xl font-bold text-gray-800 mb-4">Projektowanie dokumentacji</h2>
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/2">
+                <img src="zdj/photooffer1.png" alt="Opis obrazka" class="w-full h-auto">
+              </div>
+              <div class="md:w-1/2 bg-gray-200 p-4 md:p-8">
+                <p class="text-xl text-gray-800"><strong>Nasza firma kreślarska </strong> specjalizuje się w projektowaniu i rysowaniu dokumentacji technicznej dla różnych branż i potrzeb.
+                    <br><br>
+                   <strong> Nasz zespół projektantów </strong> i inżynierów ma wieloletnie doświadczenie w projektowaniu skomplikowanych maszyn, urządzeń, konstrukcji czy obiektów budowlanych.
+                   <br><br>
+                    
+               <strong>    Nasi eksperci</strong>  w dziedzinie projektowania mają za sobą wiele udanych projektów, które zostały zrealizowane dla firm z różnych sektorów przemysłowych, takich jak przemysł maszynowy, chemiczny, motoryzacyjny czy budowlany. Dzięki temu mamy wiedzę i doświadczenie w projektowaniu złożonych i wymagających systemów, które spełniają rygorystyczne wymagania branżowe i regulacyjne.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="mx-auto max-w-7xl p-4 mt-[100px] md:p-8 lg:p-16">
+            <h2 class="text-5xl text-center pb-4 font-bold text-gray-800 mb-4">Projekty Architektoniczne</h2>
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/2 bg-gray-200 p-4 md:p-8">
+                <p class="text-xl text-gray-800"><strong> Nasza firma kreślarska </strong>specjalizuje się w opracowywaniu projektów architektonicznych dla różnych celów i potrzeb
+                    <br><br>
+                    <strong>    Posiadamy zespół doświadczonych architektów </strong> którzy dysponują wiedzą i umiejętnościami potrzebnymi do tworzenia innowacyjnych i funkcjonalnych projektów, dostosowanych do wymagań i potrzeb naszych klientów.
+                    <br><br>
+                    <strong>    Jako firma kreślarska </strong> specjalizująca się w opracowywaniu projektów architektonicznych dla różnych celów i potrzeb, posiadamy zespół doświadczonych architektów, którzy dysponują wiedzą i umiejętnościami potrzebnymi do tworzenia innowacyjnych i funkcjonalnych projektów, dostosowanych do wymagań i potrzeb naszych klientów.</p>
+              </div>
+              <div class="md:w-1/2">
+                <img src="zdj/photooffer2.png" alt="Opis obrazka" class="w-full h-auto">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-[150px] mx-auto max-w-7xl p-4 md:p-8 lg:p-16">
+            <h2 class="pb-4 text-center text-5xl font-bold text-gray-800 mb-4">Konsultacje</h2>
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/2">
+                <img src="zdj/photooffer3.png" alt="Opis obrazka" class="w-full h-auto">
+              </div>
+              <div class="md:w-1/2 bg-gray-200 p-4 md:p-8">
+                <p class="text-xl text-gray-800"><strong>W naszej firmie kreslarskiej</strong> oferujemy usługi konsultacji i doradztwa technicznego dla naszych klientów z różnych branż i dziedzin, w tym dla przemysłu, architektury, designu i inżynierii.
+<br><br>
+                  <strong>Nasi eksperci</strong> posiadają wiedzę i doświadczenie w dziedzinie projektowania i modelowania 3D oraz posiadają szeroką wiedzę techniczną, dzięki której są w stanie pomóc naszym klientom w rozwiązywaniu ich problemów i realizacji ich projektów. Klient otrzymuje wsparcie na każdym etapie realizacji projektu, dzięki czemu może mieć pewność, że projekt będzie wykonany zgodnie z najwyższymi standardami Jako firma kreslarska.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="mx-auto max-w-7xl p-4 mt-[100px] md:p-8 lg:p-16">
+            <h2 class="text-5xl text-center pb-4 font-bold text-gray-800 mb-4">Analiza Wytrzymałości</h2>
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/2 bg-gray-200 p-4 md:p-8">
+                <p class="text-xl text-gray-800"><strong>Analiza wytrzymałościowa</strong> jest procesem, w którym nasz zespół projektowy przeprowadza symulacje komputerowe, aby sprawdzić, czy projekt jest wytrzymały i spełnia wymagania techniczne. Podczas procesu analizy wytrzymałościowej nasz zespół korzysta z najnowocześniejszego oprogramowania, takiego jak Autodesk Nastran, ANSYS, czy SolidWorks Simulation, aby stworzyć model numeryczny.
+<br><br>
+                 <strong>Nasz zespół projektowy</strong> jest doświadczony w przeprowadzaniu analizy wytrzymałościowej dla różnych typów projektów i zawsze stara się zapewnić najwyższą jakość usług dla naszych klientów</p>
+              </div>
+              <div class="md:w-1/2">
+                <img src="zdj/photooffer4.png" alt="Opis obrazka" class="w-full h-auto">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <footer class="flex mt-16 md:mt-24 h-72 md:h-96 bg-fixed bg-no-repeat bg-cover" >
+        <div class="flex opacity-90 mx-auto h-full px-4 py-8 md:flex-row md:justify-between bg-gray-800 w-full items-center">
+          <img src="zdj/pngegg.png" alt="Logo firmy" class="w-full md:w-1/3 h-full md:h-auto mx-auto md:ml-0  sm:ml-0 lg:w-[250px] lg:ml-[400px] ">
+          <h2 class="block w-full md:w-1/2 text-white text-center text-4xl mt-4 md:mt-0 lg:inline-block lg:mr-[350px] lg:text-6xl">Pracownia Kreślarska</h2>
+        </div>
+    </footer>
+</body>
+</html>    

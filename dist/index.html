@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracownia Kreślarska</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="output.css">
+    
+
+
+</head>
+<body>
+  <nav class="flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center flex-shrink-0 text-black mr-6">
+      <img src="zdj/icons8-home-page-50.png" alt="" class="">
+      <span class="font-semibold text-xl tracking-tight ml-3 mt-1"> Pracownia Kreślarska</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-black">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow text-center lg:flex lg:items-center lg:w-auto xl:flex xl:items-center xl:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Strona Główna
+        </a>
+        <a href="oferta.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Oferta
+        </a>
+        <a href="projekty.php" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Projekty
+        </a>
+        <a href="kontakt.html" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg">
+          Kontakt
+        </a>
+        <a href="ofirmie.html" class="block mt-4 lg:inline-block lg:mt-0 text-black text-lg">
+          O Firmie
+        </a>
+      </div>
+      <div class="flex">
+        <a href="tel:+123456789">
+          <img src="zdj/icons8-iphone-se-30.png" alt="" class="hidden lg:block">
+        </a>
+        <a href="tel:+123456789" class="hidden lg:block inline-block text-sm px-4 py-2 leading-none text-lg text-black border-black mt-4 lg:mt-0">
+          +48 123 321 123
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuButton = document.querySelector('.block button');
+    const menu = document.querySelector('.text-center');
+
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <section>
+  <div class="relative">
+    <img src="zdj/mainphoto.png" class="w-full h-[877px]">
+    <div class="absolute bottom-20 left-10 bg-gray-700 bg-opacity-40 rounded-r-3xl rounded-l-3xl   h-[157px]  flex justify-center items-center pl-10 lg:pl-2  w-5/6 text-white font-medium text-4xl lg:bottom-16 sm:w-2/3 lg:text-5xl xl:text-6xl xl:w-1/2">
+      <p class="text-white text-center">Tworzymy rzeczywistość z marzeń</p>
+    </div>
+  </div> 
+  </section>
+
+  <section class="font-sans">
+    <div class="flex flex-col md:flex-row items-center justify-center lg:mt-48">
+      <!-- Lewa strona -->
+      <div class="flex flex-col items-center md:items-start md:mr-12">
+        <!-- Nagłówek O Firmie -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl mt-10 sm:mt-20 ml-5 sm:ml-50 font-bold mb-4 text-gray-500 lg:ml-60 md:ml-40 " >O Firmie</h1>
+        <!-- Napis Dlaczego My? -->
+        <h2 class="text-xl sm:text-2xl md:text-3xl md:mr-16 tracking-wider mb-10 font-normal ml-8 sm:ml-36 font-serif text-base leading-6 lg:ml-64 md:ml-40">Dlaczego My?</h2>
+        <!-- Opis w 5 myslnikach -->
+        <ol class="ml-12 sm:ml-20 md:ml-32">
+          <li class="mb-4 text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider leading-normal">-Profesjonalna i specjalistyczna wiedza</li>
+  
+          <li class="mb-4 text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider leading-normal">-Zaawansowane narzędzia i technologie</li>
+  
+          <li class="mb-4 text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider leading-normal">-Dostosowanie do potrzeb klienta</li>
+  
+          <li class="mb-4 text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider leading-normal">-Oszczędność czasu i kosztów</li>
+  
+          <li class="mb-4 text-lg sm:text-xl md:text-2xl text-gray-700 tracking-wider leading-normal">-Gwarancja jakości i zgodności z normami</li>
+  
+        </ol>
+        <!-- Przycisk -->
+       <a href="ofirmie.html"><button class="text-white mt-10 ml-5 sm:ml-40 font-medium text-base sm:text-lg md:text-xl tracking-normal leading-normal w-48 h-12 bg-gray-700 lg:ml-64 md:ml-40" >
+          Dowiedz się więcej
+        </button></a> 
+      </div>
+      <!-- Prawa strona -->
+      <div class="w-full md:w-[700px] mt-10 md:mt-0 ">
+        <img src="zdj/najman.png" alt="Zdjęcie szefa firmy" class="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="font-sans">
+    <div class="flex justify-center items-center h-screen">
+      <div class="relative w-full h-[950px] mt-[450px] ">
+        <img src="zdj/ofertaphoto.png" class="object-cover object-center w-full h-[950px] ">
+        <div class="absolute inset-0 flex justify-center items-center">
+          <div class="lg:w-[854px] lg:h-[570px] sm:w-[500px]sm:h-[800px] w-[500px] h-[700px] bg-white bg-opacity-75 rounded-lg mx-auto flex flex-col justify-center items-center">
+            <h2 class=" mb-6  font-bold text-7xl leading-8 text-center text-gray-500 font-sans">Oferta</h2>
+            <h2 class="my-12 text-[26px] font-normal text-base leading-6 tracking-wider text-center text-black font-sans">Co u nas znajdziesz ?</h2>
+            <p class="text-lg text-gray-600 mb-8">
+              <span class="block text-[22px]  mb-4 font-normal text-lg leading-6 tracking-wider text-black font-sans ml-4">- Projektowanie i rysowanie dokumentacji technicznej</span>
+              <span class="block text-[22px] mb-4 font-normal text-lg leading-6 tracking-wider text-black font-sans ml-4">- Opracowywanie projektów architektonicznych</span>
+              <span class="block text-[22px] mb-4 font-normal text-lg leading-6 tracking-wider text-black font-sans ml-4">- Modelowanie 3D</span>
+              <span class="block text-[22px] mb-4 font-normal text-lg leading-6 tracking-wider text-black font-sans ml-4">- Konsultacje i doradztwo techniczne</span>
+              <span class="block text-[22px] mb-4 font-normal text-lg leading-6 tracking-wider text-black font-sans ml-4">- Analiza wytrzymałościowa</span>
+            </p>
+          <a href="oferta.html"><button class="mt-5 text-white font-normal text-base leading-6 font-sans w-52 h-12 bg-gray-800">Zobacz więcej</button></a>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mx-auto pt-16 pb-8 mt-[450px]">
+      <h2 class="mb-6  font-bold text-7xl leading-8 text-center text-gray-500 font-sans mb-[150px]  ">Nasze  Projekty</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="project-item">
+          <div class="project-name hidden md:block text-center font-mono font-normal text-2xl sm:text-2xl lg:text-4xl mb-3 tracking-widest text-gray-800 transform hover:scale-125 ease-in-out duration-500 cursor-pointer"><a href="projekty.html">Zobacz</a> </div>
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500" src="zdj/photo1.png" alt="Projekt 1" />
+        </div>
+        <div class="project-item">
+          <div class="project-name hidden md:block text-center font-mono font-normal text-2xl sm:text-2xl lg:text-4xl mb-3 tracking-widest text-gray-800 transform hover:scale-125 ease-in-out duration-500 cursor-pointer"><a href="projekty.html">Wszystkie </a> </div>
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500" src="zdj/photo2.png" alt="Projekt 2" />
+        </div>
+        <div class="project-item">
+          <div class="project-name hidden md:block text-center font-mono font-normal text-2xl sm:text-2xl lg:text-4xl mb-3 tracking-widest text-gray-800 transform hover:scale-125 ease-in-out duration-500 cursor-pointer" ><a href="projekty.html">Nasze</a> </div>
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500" src="zdj/photo3.png" alt="Projekt 3" />
+        </div>
+        <div class="project-item">
+          <div class="project-name hidden md:block text-center font-mono font-normal text-2xl sm:text-2xl lg:text-4xl mb-3 tracking-widest text-gray-800 transform hover:scale-125 ease-in-out duration-500 cursor-pointer"><a href="projekty.html">Projekty</a> </div>
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500 " src="zdj/photo4.png" alt="Projekt 4" />
+        </div>
+        <div class="project-item">
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500 " src="zdj/photo5.png" alt="Projekt 5" />
+        </div>
+        <div class="project-item">
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500 " src="zdj/photo6.png" alt="Projekt 6" />
+        </div>
+        <div class="project-item">
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500" src="zdj/photo7.png" alt="Projekt 7" />
+        </div>
+        <div class="project-item">
+          <img class="project-image w-full h-[450px] transform hover:scale-110 ease-in-out duration-500" src="zdj/photo8.png" alt="Projekt 8" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="flex mt-16 md:mt-24 h-72 md:h-96 bg-fixed bg-no-repeat bg-cover" >
+    <div class="flex opacity-90 mx-auto h-full px-4 py-8 md:flex-row md:justify-between bg-gray-800 w-full items-center">
+      <img src="zdj/pngegg.png" alt="Logo firmy" class="w-full md:w-1/3 h-full md:h-auto mx-auto md:ml-0  sm:ml-0 lg:w-[250px] lg:ml-[400px] ">
+      <h2 class="block w-full md:w-1/2 text-white text-center text-4xl mt-4 md:mt-0 lg:inline-block lg:mr-[350px] lg:text-6xl">Pracownia Kreślarska</h2>
+    </div>
+</footer>
+</body>
+</html>
+
